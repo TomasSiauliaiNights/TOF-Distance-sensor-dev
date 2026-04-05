@@ -47,7 +47,7 @@ void setup() {
   }
 
   //example configuration
-  if (!sensor0.writeRegister(0x80, 1)) //configure sensor for serial mode
+  if (!sensor0.writeRegister(0x80, 0)) //configure sensor for serial mode
   {
     Serial.println("failed to write register 80");
     while(1);
